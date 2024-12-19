@@ -1,0 +1,7 @@
+{
+"variant":"Alpha",
+"workdir":"/directory where your bam files are stored/",
+"metadatafile":"sampletable.tsv",
+"outfileprefix":"PE_template_match_",
+"mappedreadstab":"idxstatsBam_Alpha.tsv"
+}
