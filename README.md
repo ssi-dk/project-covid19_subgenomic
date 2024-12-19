@@ -30,3 +30,21 @@ get_readstats.R               : Collects the number of mapped reads
 do_statistical_analysis.R     : Scripts used to perform the analysis and to generate the figures (Note: the script does not include any example patient metadata but describes the expected data columns to be imported.
                                 
 Supplementarytable1.csv       : Sample list with accession ids.
+
+## Running the script
+
+Bam alignment files must be placed in a work directory, with one subfolder per lineage (e.g. Alpha, Delta, etc.) and the input.json file shall be updated to specify the input/output paths.
+
+1- Run the script extract_mate_reads.R to extract all 5'-end reads that overlap with the region containing the leader sequence (pos 52-67).
+2- Run get_readstats.R to generate a table with the number of mapped reads.
+3- Run the script collect_site_occ_w_pseudoct.R to aggregate the results per subgenomic RNAs.
+(optional)
+4- Run the script do_statistical_analysis.R to perform the analyses described in the article.
+
+
+
+
+
+
+
+
